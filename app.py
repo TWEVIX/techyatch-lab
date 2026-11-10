@@ -66,23 +66,21 @@ elif case_study == "Case 2: FitLife Gym":
     st.header("💪 Case 2: FitLife Gym Member Churn")
     st.write("Analyze membership check-ins and reduce cancellation spikes.")
     
-    # 1. The Interactive Dial (The Input Slider)
+    # 1. The Interactive Dial
     churn_rate = st.slider("Simulated Churn Rate (%):", 1, 50, 12)
     
-    # 2. The Cleaned Data Table (Perfect Alignment)
-        gym_data = pd.DataFrame({
+    # 2. The Cleaned Data Table
+    gym_data = pd.DataFrame({
         "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
         "Cancellations": [5, 7, 6, 8, churn_rate, churn_rate + 4, churn_rate + 9],
         "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
     })
-
     
     # 3. Displaying Content Layout Columns
     col1, col2 = st.columns([1, 1])
     with col1:
         st.subheader("📋 Monthly Membership Log")
         st.dataframe(gym_data, use_container_width=True)
-
 
 
 
