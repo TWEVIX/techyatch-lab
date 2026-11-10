@@ -67,11 +67,12 @@ elif lab_choice == "Case 2: FitLife Gym (Retention & Churn)":
     st.title("🏋️ Case 2: FitLife Gym (The Mystery of Disappearing Customers)")
     st.write("Maya noticed active members dropping after April. Investigate the clues below before jumping to conclusions!")
 
-    gym_data = pd.DataFrame({
+   gym_data = pd.DataFrame({
     "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
     "Cancellations":,
     "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
 })
+
 
 
     col1, col2 = st.columns([1, 1])
