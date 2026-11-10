@@ -1,0 +1,15 @@
+name: Streamlit Keep Alive
+
+on:
+  schedule:
+    # This tells GitHub to automatically run this script every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # This adds a manual button to test it anytime
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App URL
+        run: |
+          curl -sI "https://streamlit.app" | head -n 1
