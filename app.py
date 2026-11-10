@@ -70,11 +70,12 @@ elif case_study == "Case 2: FitLife Gym":
     churn_rate = st.slider("Simulated Churn Rate (%):", 1, 50, 12)
     
     # 2. The Cleaned Data Table (Perfect Alignment)
-    gym_data = pd.DataFrame({
+        gym_data = pd.DataFrame({
         "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        "Cancellations":,
+        "Cancellations": [5, 7, 6, 8, churn_rate, churn_rate + 4, churn_rate + 9],
         "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
     })
+
     
     # 3. Displaying Content Layout Columns
     col1, col2 = st.columns([1, 1])
