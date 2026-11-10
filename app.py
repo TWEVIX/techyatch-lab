@@ -62,16 +62,26 @@ if lab_choice == "Case 1: Martha's Bakery (Profit vs. Volume)":
 
 # ==========================================
 # CASE 2: FITLIFE GYM
-# ==========================================
-elif lab_choice == "Case 2: FitLife Gym (Retention & Churn)":
-    st.title("🏋️ Case 2: FitLife Gym (The Mystery of Disappearing Customers)")
-    st.write("Maya noticed active members dropping after April. Investigate the clues below before jumping to conclusions!")
+elif case_study == "Case 2: FitLife Gym":
+    st.header("💪 Case 2: FitLife Gym Member Churn")
+    st.write("Analyze membership check-ins and reduce cancellation spikes.")
+    
+    # 1. The Interactive Dial (The Input Slider)
+    churn_rate = st.slider("Simulated Churn Rate (%):", 1, 50, 12)
+    
+    # 2. The Cleaned Data Table (Perfect Alignment)
+    gym_data = pd.DataFrame({
+        "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        "Cancellations":,
+        "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
+    })
+    
+    # 3. Displaying Content Layout Columns
+    col1, col2 = st.columns([1, 1])
+    with col1:
+        st.subheader("📋 Monthly Membership Log")
+        st.dataframe(gym_data, use_container_width=True)
 
-   gym_data = pd.DataFrame({
-    "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-    "Cancellations":,
-    "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
-})
 
 
 
