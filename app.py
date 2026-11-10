@@ -119,7 +119,7 @@ elif case_study == "Case 2: FitLife Gym (Retention & Churn)":
 # ==========================================
 # CASE 3: THE SMART CLINIC QUEUE
 # ==========================================
-elif lab_choice == "Case 3: The Smart Clinic Queue (Peak Flow)":
+elif case_study == "Case 3: The Smart Clinic Queue (Peak Flow)":
     st.title("🏥 Case 3: The Smart Clinic Queue (Forecasting Patient Surges)")
     st.write("Imagine a clinic waiting room is a playground slide. Adjust nurse staffing to prevent long wait times during peak hours!")
 
