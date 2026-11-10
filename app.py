@@ -68,11 +68,11 @@ elif lab_choice == "Case 2: FitLife Gym (Retention & Churn)":
     st.write("Maya noticed active members dropping after April. Investigate the clues below before jumping to conclusions!")
 
     gym_data = pd.DataFrame({
-        "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-        "Active Members":,
-        "Cancellations":,
-        "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
-    })
+    "Month": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+    "Cancellations":,
+    "Competitor Open": ["No", "No", "No", "No", "Yes", "Yes", "Yes"]
+})
+
 
     col1, col2 = st.columns([1, 1])
     with col1:
@@ -80,8 +80,9 @@ elif lab_choice == "Case 2: FitLife Gym (Retention & Churn)":
         st.dataframe(gym_data, use_container_width=True)
 
     with col2:
-        st.subheader("📉 Active Members Trend")
-        st.line_chart(gym_data.set_index("Month")["Active Members"])
+    st.subheader("📊 Churn Acceleration Metric")
+    st.metric("Active Members Impacted", f"{churn_rate}%", delta="-15% Change")
+
 
     st.subheader("🕵️ Detective Verification Check")
     suspect = st.radio(
