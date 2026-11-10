@@ -6,7 +6,7 @@ st.set_page_config(page_title="TechYatch Lab | Virtual Internship Sandbox", page
 st.sidebar.title("🕵️ TechYatch Lab™")
 st.sidebar.caption("A Twevix™ Innovation | Virtual Data Internship")
 
-lab_choice = st.sidebar.radio(
+case_study = st.sidebar.radio(
     "Choose Your Data Detective Case:",
     [
         "Case 1: Martha's Bakery (Profit vs. Volume)",
