@@ -21,7 +21,7 @@ st.sidebar.info("💡 **The Golden Rule:** Data is information. Analysis turns i
 # ==========================================
 # CASE 1: MARTHA'S BAKERY
 # ==========================================
-if lab_choice == "Case 1: Martha's Bakery (Profit vs. Volume)":
+if case_study == "Case 1: Martha's Bakery (Profit vs. Volume)":
     st.title("🧁 Case 1: Martha's Bakery (Profit vs. Volume)")
     st.write("Adjust the sales and profit numbers below to help Martha find her real money-maker!")
 
