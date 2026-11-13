@@ -66,7 +66,8 @@ if case_study == "Case 1: Martha's Bakery (Profit vs. Volume)":
 elif case_study == "Case 2: FitLife Gym (Retention & Churn)":
     st.header("💪 Case 2: FitLife Gym Member Churn")
     st.write("Analyze membership check-ins and reduce cancellation spikes.")
-    ...
+    st.info("🕵️ **DETECTIVE CHALLENGE:** Slide the Churn Rate dial down to simulate a retention campaign. Find the exact churn percentage needed to keep **July cancellations under 15 members**.")
+
     # 1. The Interactive Dial
     churn_rate = st.slider("Simulated Churn Rate (%):", 1, 50, 12)
     
