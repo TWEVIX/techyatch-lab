@@ -122,7 +122,7 @@ elif case_study == "Case 2: FitLife Gym (Retention & Churn)":
 elif case_study == "Case 3: The Smart Clinic Queue (Peak Flow)":
     st.title("🏥 Case 3: The Smart Clinic Queue (Forecasting Patient Surges)")
     st.write("Imagine a clinic waiting room is a playground slide. Adjust nurse staffing to prevent long wait times during peak hours!")
-
+    ...
     hours = ["08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00"]
     expected_patients = [15, 28, 35, 30, 45, 60, 25]
 
