@@ -88,20 +88,7 @@ elif case_study == "Case 2: FitLife Gym (Retention & Churn)":
         st.subheader("📊 Churn Acceleration Metric")
         st.metric("Active Members Impacted", f"{churn_rate}%")
 
-    with col1:
-        st.subheader("📋 Monthly Membership Log")
-        st.dataframe(gym_data, use_container_width=True)
-
-
-
-    col1, col2 = st.columns([1, 1])
-    with col1:
-        st.subheader("📋 Monthly Membership Log")
-        st.dataframe(gym_data, use_container_width=True)
-
-    with col2:
-            st.subheader("📊 Churn Acceleration Metric")
-            st.metric("Active Members Impacted", f"{churn_rate}%")
+  
 
     st.subheader("🕵️ Detective Verification Check")
     suspect = st.radio(
