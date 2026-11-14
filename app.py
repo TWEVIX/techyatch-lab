@@ -57,7 +57,8 @@ if case_study == "Case 1: Martha's Bakery (Profit vs. Volume)":
     st.dataframe(data, use_container_width=True)
 
     st.subheader("📈 Profit Comparison Chart")
-    st.bar_chart(data.set_index("Product")["Total Profit (£)"])
+    st.bar_chart(data.set_index("Product")["Total Profit (£)"], x_label="Bakery Product", y_label="Total Profit (£)")
+
 
     best_row = data.loc[data["Total Profit (£)"].idxmax()]
     st.success(f"💡 Data Detective Insight: Focus on **{best_row['Product']}**! It generates the highest total profit (£{best_row['Total Profit (£)']:.2f}).")
