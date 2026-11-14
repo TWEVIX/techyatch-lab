@@ -128,7 +128,8 @@ elif case_study == "Case 3: The Smart Clinic Queue (Peak Flow)":
     })
 
     st.subheader("📈 Patient Surge vs. Clinic Capacity")
-    st.line_chart(clinic_df.set_index("Time"))
+    st.line_chart(clinic_df.set_index("Time"), x_label="Time of Day", y_label="Number of Patients")
+
 
     peak_patients = max(expected_patients)
     capacity = nurses_on_duty * patients_per_nurse_hr
