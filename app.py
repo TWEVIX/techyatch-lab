@@ -140,3 +140,10 @@ elif case_study == "Case 3: The Smart Clinic Queue (Peak Flow)":
     else:
         overflow = peak_patients - capacity
         st.error(f"🚨 Bottleneck Alert! At 18:00, {overflow} patients will face long delays. Increase nurses to at least {peak_patients // patients_per_nurse_hr}!")
+
+
+
+st.markdown("---")
+st.subheader("🎓 Submit Your Workbook Findings")
+st.write("Completed all three cases? Submit your answers below for instant automated grading.")
+st.link_button("📝 Open Auto-Graded Assessment", "https://forms.gle/C4FuTCa6np7weKGT7")
